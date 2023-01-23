@@ -25,7 +25,7 @@ class Rectangle:
         """retrieves width attribute"""
         return self.__width
 
-   @width.setter
+    @width.setter
     def width(self, value):
         """sets width attribute"""
         if not isinstance(value, int):
@@ -77,7 +77,7 @@ class Rectangle:
         """returns a string representation of the rectangle"""
         return "Rectangle({:d}, {:d})".format(self.__width, self.__height)
 
-    def __del__(self):
+   def __del__(self):
         """prints a message for every object that is deleted"""
         print("Bye rectangle...")
         Rectangle.number_of_instances -= 1
